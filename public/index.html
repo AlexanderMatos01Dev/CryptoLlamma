@@ -10,16 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@vercel/analytics"></script>
     <script src="https://cdn.jsdelivr.net/npm/@vercel/speed-insights"></script>
     <script>
-        // Inicia Vercel Speed Insights
-        (function() {
-            var script = document.createElement('script');
-            script.src = "https://cdn.jsdelivr.net/npm/@vercel/speed-insights";
-            script.onload = function() {
-                injectSpeedInsights();
-            };
-            document.head.appendChild(script);
-        })();
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 
 
 </head>
